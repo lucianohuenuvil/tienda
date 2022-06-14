@@ -1,15 +1,7 @@
-//window.onload.setTimeout(slide, 2000);
-
-//setInterval(slide,1000);
-
 addEventListener('DOMContentLoaded', () => {
     setInterval(slide,5000);
   })
-  
-  
-  window.onscroll = function() {myFunction()};
-  
-  
+   
   
   
   function slide() {
@@ -38,30 +30,4 @@ addEventListener('DOMContentLoaded', () => {
   
   
   
-  function myFunction() {
-    var navbar = document.getElementById("nav");
-    var links = document.getElementsByClassName("link");
-    var change = document.getElementById("change");
-  
-  
-    var change_navbar = change.offsetTop;
-  
-    if (window.pageYOffset >= 300) {
-      navbar.style.backgroundColor = "white";
-      navbar.style.transition = "all .5s";
-      navbar.style.boxShadow = "1px 1px 8px #888888"
-      for (let index = 0; index < links.length; index ++){
-        links[index].style.color = "#898989";
-      }
-      
-    } else {
-      navbar.style.backgroundColor = "transparent";
-      navbar.style.boxShadow = "none"
-      for (let index = 0; index < links.length; index ++){
-        links[index].style.color = "white";
-      }
-  
-    }
-  }
-  
-  
+
