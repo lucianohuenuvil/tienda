@@ -69,19 +69,6 @@ main{
 }
 
 
-.icon-container{
-    
-    position: absolute;
-    height: 100%;
-    padding: 0px 5px 0px 5px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: auto;
-    top: 0;
-    align-items: center;
-
-}
 
 .icon-responsive{
     display: none;
@@ -120,13 +107,15 @@ main{
 
 .container-slide{
     background-color: aliceblue;
-    max-height: 600px;
+    height: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .carousel-slide{
     display: flex;
     flex-direction: row;
+    
     width: 400%;
     transition: 1s;
 }
@@ -137,10 +126,35 @@ main{
 
 .carousel-items img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
+
+    filter: brightness(80%);
     text-align: center;
+}
+
+
+
+.icon-container{
+    display: flex;
+    position:absolute;
+    height: 100%;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+    top: 0;
+    align-items: center;
+
+}
+
+
+.icon-container i{
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+}
+
+
+.icon-container i:hover{
+    color: rgb(218, 218, 218);
 }
 
 
@@ -409,6 +423,22 @@ main{
 
 }
 
+
+.text-college{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-college h4, a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
          /*scroll colegios*/
 
 .college-container::-webkit-scrollbar {
@@ -601,6 +631,7 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 
@@ -610,6 +641,12 @@ main{
 
     background-color: #144490;
     padding: 20px;
+    
+}
+
+.help-est1 p{
+    color: white;
+    font-size: 15px;
 }
 
 .help-est2{
@@ -625,7 +662,7 @@ main{
 
 .container-product{
     width: 350px;
-    min-height: 400px;
+    height: 500px;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
