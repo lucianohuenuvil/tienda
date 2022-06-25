@@ -298,6 +298,7 @@ main{
 
 .about-us p{
     color: rgb(64, 64, 64);
+    text-align: justify;
 }
 
 .about-us h2{
@@ -326,6 +327,8 @@ main{
     text-transform: uppercase;
     color: rgb(60, 193, 193);
 }
+
+
 
 
 
@@ -623,10 +626,15 @@ main{
 }
 
 
+.info-map{
+
+    padding-top: 15px;
+}
+
 .help-container{
     margin-top: 20px;
     width: 100%;
-    background-color: beige;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -635,27 +643,39 @@ main{
 }
 
 
-.help-est1{
+.help-est{
+    display: flex;
+    flex-direction: column;
     height: 250px;
     width: 500px;
 
-    background-color: #144490;
-    padding: 20px;
-    
+    padding-bottom: 5px;
+
+}
+.text-est{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.help-est1 p{
-    color: white;
-    font-size: 15px;
+.text-est p{
+    color: rgb(58, 58, 58);
 }
 
-.help-est2{
-    height: 250px;
-    width: 500px;
-    padding: 20px;
 
-    background-color: red;
+.help-est img{
+    width: 100%;
+    height: 90%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: 5px;
 }
+
+.img-est{
+    object-fit: cover;
+}
+
+
 
 /* PRODUCTOS */
 
