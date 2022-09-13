@@ -1,28 +1,31 @@
 addEventListener('DOMContentLoaded', () => {
-    setInterval(slide,5000);
+    setInterval(slide,6000);
   })
    
   
   
   function slide() {
-      let idSlide = document.getElementById("slide");
-      switch (idSlide.style.marginLeft){
-        case "":
-            idSlide.style.marginLeft = "0%"
-            break;
-        case "0%":
-            idSlide.style.marginLeft = "-100%";
-            break;
-        case "-100%":
-            idSlide.style.marginLeft = "-200%"
-            break;
-        case "-200%":
-            idSlide.style.marginLeft = "-300%"
-            break;
-        case "-300%":
-            idSlide.style.marginLeft = "0%"
-            break;
-    }
+      let idSlide = document.getElementsByClassName('carousel-slide');
+      for (index of idSlide){
+        switch (index.style.marginLeft){
+            case "":
+                index.style.marginLeft = "0%"
+                break;
+            case "0%":
+                index.style.marginLeft = "-100%";
+                break;
+            case "-100%":
+                index.style.marginLeft = "-200%"
+                break;
+            case "-200%":
+                index.style.marginLeft = "-300%"
+                break;
+            case "-300%":
+                index.style.marginLeft = "0%"
+                break;
+        }
+      }
+
   }
 
 
@@ -66,50 +69,53 @@ const scrollnav = () => $(document).ready(function(){
 
 
 function cambiarDerecha()   {
-  let idSlide = document.getElementById("slide")
+    let idSlide = document.getElementsByClassName('carousel-slide');
+    for (index of idSlide){
 
-  switch (idSlide.style.marginLeft){
-      case "":
-          idSlide.style.marginLeft = "-100%"
-          break;
-      case '0%':
-          idSlide.style.marginLeft = "-100%";
-          break;
+        switch (index.style.marginLeft){
+            case "":
+                index.style.marginLeft = "-100%"
+                break;
+            case '0%':
+                index.style.marginLeft = "-100%";
+                break;
 
-      case "-100%":
-          idSlide.style.marginLeft = "-200%"
-          break;
-      case "-200%":
-          idSlide.style.marginLeft = "-300%"
-          break;
-      case "-300%":
-          idSlide.style.marginLeft = "0%"
-          break;
+            case "-100%":
+                index.style.marginLeft = "-200%"
+                break;
+            case "-200%":
+                index.style.marginLeft = "-300%"
+                break;
+            case "-300%":
+                index.style.marginLeft = "0%"
+                break;
 
-  }
+        }
+    }
 }
 
 
 function cambiarIzquierda()   {
-  let idSlide = document.getElementById("slide")
-
-  switch (idSlide.style.marginLeft){
-      case "":
-          idSlide.style.marginLeft = "-300%"
-          break;
-      case "0%":
-          idSlide.style.marginLeft = "-300%";
-          break;
-      case "-100%":
-          idSlide.style.marginLeft = "0%"
-          break;
-      case "-200%":
-          idSlide.style.marginLeft = "-100%"
-          break;
-      case "-300%":
-          idSlide.style.marginLeft = "-200%"
-          break;
-  }
+    let idSlide = document.getElementsByClassName('carousel-slide');
+    for (index of idSlide){
+        switch (index.style.marginLeft){
+            case "":
+                index.style.marginLeft = "-300%"
+                break;
+            case "0%":
+                index.style.marginLeft = "-300%";
+                break;
+            case "-100%":
+                index.style.marginLeft = "0%"
+                break;
+            case "-200%":
+                index.style.marginLeft = "-100%"
+                break;
+            case "-300%":
+                index.style.marginLeft = "-200%"
+                break;
+        }
+    }
 }
 
   
