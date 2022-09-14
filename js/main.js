@@ -1,5 +1,6 @@
 addEventListener('DOMContentLoaded', () => {
     setInterval(slide,6000);
+    
   })
    
   
@@ -14,13 +15,13 @@ addEventListener('DOMContentLoaded', () => {
             case "0%":
                 index.style.marginLeft = "-100%";
                 break;
+            // case "-100%":
+            //     index.style.marginLeft = "-200%"
+            //     break;
+            // case "-200%":
+            //     index.style.marginLeft = "-300%"
+            //     break;
             case "-100%":
-                index.style.marginLeft = "-200%"
-                break;
-            case "-200%":
-                index.style.marginLeft = "-300%"
-                break;
-            case "-300%":
                 index.style.marginLeft = "0%"
                 break;
         }
@@ -30,7 +31,61 @@ addEventListener('DOMContentLoaded', () => {
 
 
 
-  const navresponsive = () => {
+function cambiarDerecha()   {
+    let idSlide = document.getElementsByClassName('carousel-slide');
+    for (index of idSlide){
+
+        switch (index.style.marginLeft){
+            case "":
+                index.style.marginLeft = "-100%"
+                break;
+            case '0%':
+                index.style.marginLeft = "-100%";
+                break;
+
+            // case "-100%":
+            //     index.style.marginLeft = "-200%"
+            //     break;
+            // case "-200%":
+            //     index.style.marginLeft = "-300%"
+            //     break;
+            case "-100%":
+                index.style.marginLeft = "0%"
+                break;
+
+        }
+    }
+}
+
+
+function cambiarIzquierda()   {
+    let idSlide = document.getElementsByClassName('carousel-slide');
+    for (index of idSlide){
+        switch (index.style.marginLeft){
+            case "":
+                index.style.marginLeft = "-100%"
+                break;
+            case "0%":
+                index.style.marginLeft = "-100%";
+                break;
+            // case "-100%":
+            //     index.style.marginLeft = "0%"
+            //     break;
+            // case "-200%":
+            //     index.style.marginLeft = "-100%"
+            //     break;
+            case "-100%":
+                index.style.marginLeft = "0%"
+                break;
+        }
+    }
+}
+
+  
+  
+  
+
+const navresponsive = () => {
     let buttonNav = document.getElementById("button-responsive");
     switch (buttonNav.style.left){
         case "":
@@ -47,6 +102,9 @@ addEventListener('DOMContentLoaded', () => {
   
 
   
+  
+  
+
 //Slide scroll page 
 
 const scrollnav = () => $(document).ready(function(){
@@ -66,61 +124,4 @@ const scrollnav = () => $(document).ready(function(){
     });
 
 });
-
-
-function cambiarDerecha()   {
-    let idSlide = document.getElementsByClassName('carousel-slide');
-    for (index of idSlide){
-
-        switch (index.style.marginLeft){
-            case "":
-                index.style.marginLeft = "-100%"
-                break;
-            case '0%':
-                index.style.marginLeft = "-100%";
-                break;
-
-            case "-100%":
-                index.style.marginLeft = "-200%"
-                break;
-            case "-200%":
-                index.style.marginLeft = "-300%"
-                break;
-            case "-300%":
-                index.style.marginLeft = "0%"
-                break;
-
-        }
-    }
-}
-
-
-function cambiarIzquierda()   {
-    let idSlide = document.getElementsByClassName('carousel-slide');
-    for (index of idSlide){
-        switch (index.style.marginLeft){
-            case "":
-                index.style.marginLeft = "-300%"
-                break;
-            case "0%":
-                index.style.marginLeft = "-300%";
-                break;
-            case "-100%":
-                index.style.marginLeft = "0%"
-                break;
-            case "-200%":
-                index.style.marginLeft = "-100%"
-                break;
-            case "-300%":
-                index.style.marginLeft = "-200%"
-                break;
-        }
-    }
-}
-
-  
-  
-  
-  
-  
 
