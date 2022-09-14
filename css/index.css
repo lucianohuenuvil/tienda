@@ -2,8 +2,6 @@
     margin: 0;
     font-family: 'Nunito';
     font-size: 20px;
-    
-    
 }
 
 body{
@@ -70,11 +68,9 @@ main{
 }
 
 
-
 .icon-responsive{
     display: none;
 }
-
 
 
 /*navbar responsive*/
@@ -88,7 +84,6 @@ main{
     top: 70px;
     width: 100%;
     box-shadow: 0 4px 2px -2px #888888;
-
  }
 
  .showmenu{
@@ -101,7 +96,6 @@ main{
     color: rgb(239, 239, 239);
     background-color: #4d7ecb;
  }
-
 
 
 /* carrusel */
@@ -124,12 +118,9 @@ main{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-
-
 .carousel-slide{
     display: flex;
     flex-direction: row;
-    
     width: 200%;
     transition: 1s;
 }
@@ -140,12 +131,9 @@ main{
 
 .carousel-items img{
     width: 100%;
-
     filter: brightness(90%);
     text-align: center;
 }
-
-
 
 .icon-container{
     display: flex;
@@ -157,7 +145,6 @@ main{
     margin: auto;
     top: 0;
     align-items: center;
-
 }
 
 
@@ -175,10 +162,7 @@ main{
 }
 
 
-
 /* contenedor de secciones */
-
-
 .container-section{
     padding:30px 0;
 
@@ -190,28 +174,20 @@ main{
 .container-cards{
     display: flex;
     justify-content: space-evenly;
-
     flex-wrap: wrap;
-    
-
 }
 
 
 .text-section{
     margin-bottom: 60px;
     text-align: center;
-
 }
 
 .text-section h2{
     margin-bottom: 5px;
     font-size: 2rem;
     color: rgb(60, 193, 193);
-
 }
-
-
-
 
 
 .container-box{
@@ -228,7 +204,6 @@ main{
     border-radius: 10px;
     padding-bottom: 10px;
     border: solid 1px #ada3a455;
-
 }
 
 
@@ -255,7 +230,6 @@ main{
 }
 
 
-
 .button{
     display: block;
     width: 100%;
@@ -268,7 +242,6 @@ main{
     text-transform: capitalize;
     text-align: center;
     border: none;
-
 }
 
 
@@ -281,7 +254,6 @@ main{
 }
 
 .section-content{
-
     background-color: aliceblue;
 }
 
@@ -311,9 +283,7 @@ main{
 
 .padding-top{
     padding-top: 30px;
-
 }
-
 
 
 .about-us p{
@@ -326,30 +296,14 @@ main{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /******************* Formulario de contacto **********************/
 
 .heading-form {
     text-align: center;
     margin-bottom: 2rem;
-
     text-transform: uppercase;
     color: rgb(60, 193, 193);
 }
-
-
-
 
 
 
@@ -361,14 +315,11 @@ main{
     box-shadow: 0 .5rem 1rem 8px rgba(0,0,0,.1);
     border-radius: 7px;
     background-color: white;
-
-
 }
 
 .flex-input{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 
@@ -377,8 +328,6 @@ main{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    
-
 }
 
 
@@ -396,14 +345,12 @@ main{
 }
 
 
-
 .inputBox textarea{
     width: 100%;
     border: none;
     height: 80px;
     background-color: #e5e3e3;
     padding-left: 10px;
-  
 }
 
 
@@ -417,7 +364,6 @@ main{
 
 
 .college-container{
-
     padding-bottom: 0;
     height: 250px;
     display: flex;
@@ -429,7 +375,6 @@ main{
     background-color: white;
     border-radius: 5px !important;
     box-shadow: 0 .5rem 1rem 7px rgba(0,0,0,.1);
-
 }
 
 .college-page {
@@ -438,13 +383,9 @@ main{
 }
 
 
-
-
 .college-page img {
     height: 50%;
     object-fit: contain !important;
-    
-
 }
 
 
@@ -456,17 +397,7 @@ main{
     font-size: 20px;
 }
 
-/* .text h4{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-size: 20px;
-} */
-
-
-
-
-         /*scroll colegios*/
+/*scroll colegios*/
 
 .college-container::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -492,15 +423,11 @@ main{
     background-color: #a3b1c6;
     border-radius: 20px;
     border: 2px solid #f1f2f3;
-    
 }
 
 .college-container::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
-
-
-
 
 .college{
     height: 100%;
@@ -512,7 +439,6 @@ main{
     text-align: center;
     padding-left: 20px;   
     padding-right: 20px;  
-    
 }
 
 
@@ -541,7 +467,6 @@ main{
 }
 
 
-
 /* boton whatsapp*/
 
 
@@ -553,7 +478,6 @@ main{
     bottom: 30px;
     right: 40px;
     z-index: 1;
-
 }
 
 .btn-wsp a{
@@ -566,7 +490,6 @@ main{
     align-items: center;
     text-decoration: none;
     box-shadow: 1px 1px rgb(110, 110, 110);
-
 }
 
 .btn-wsp a:hover{
@@ -578,12 +501,7 @@ main{
 .btn-wsp i{
     font-size: 55px;
     color: rgb(255, 255, 255);
-
 }
-
-
-
-
 
 
 /* Footer container*/
@@ -592,14 +510,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
-
-    
 }
 
 .text-footer a{
     font-size: 20px;
-
 }
 
 .text-center a{
@@ -620,13 +534,11 @@ main{
     text-align: center;
     border-radius: 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    
 }
 
 .box-footer span, p{
     margin: 0;
     padding-bottom: 5px;
-
     color: #666;
 }
 
@@ -665,14 +577,12 @@ main{
 
 
 .info-map{
-
     padding-top: 15px;
 }
 
 .help-container{
     margin-top: 20px;
     width: 100%;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -686,10 +596,9 @@ main{
     flex-direction: column;
     height: 250px;
     width: 500px;
-
     padding-bottom: 5px;
-
 }
+
 .text-est{
     display: flex;
     justify-content: center;
@@ -714,9 +623,7 @@ main{
 }
 
 
-
 /* PRODUCTOS */
-
 
 .container-product{
     position: relative;
@@ -733,7 +640,6 @@ main{
     background-color: white;
     border-radius: 5px;
     border: solid 1px #ada3a455;
-
 }
 
 .referential{
@@ -759,11 +665,7 @@ main{
     width: 100%;
     height: 60%;
     object-fit: contain;
-
 }
-
-
-
 
 
 .product-detail{
@@ -774,7 +676,6 @@ main{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     padding-bottom: 0;
-
 }
 
 .product-detail b {
@@ -782,14 +683,10 @@ main{
 }
 
 
-
 .talla-detail:hover{
     background-color: rgb(200, 200, 200);
     cursor: pointer;
-
 }
-
-
 
 
 .not-avaible-container{
@@ -799,12 +696,10 @@ main{
     text-align: center;
     background-color: rgba(89, 89, 89, 0.804);
     padding: 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 1px 1px 8px #888888;
-   
 
 }
 
@@ -822,14 +717,11 @@ main{
     .help-est2{
         width: 100%;
     }
-    
-
 
 }
 
 @media only screen and (max-width: 640px){
 
-    
     .icon-responsive{
         display: block;
     }
@@ -854,9 +746,5 @@ main{
     .container-slide-responsive{
         display: flex;
     }
-
-    
-
-
 
 }
