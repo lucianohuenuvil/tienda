@@ -20,8 +20,10 @@ main{
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 8px #888888;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgb(34 48 92);
+    /* box-shadow: 1px 1px 8px #888888; */
+    box-shadow: 1px 1px 2px #888888;
 }
 
 .navbar{
@@ -37,6 +39,7 @@ main{
 
 .navbar a{
     font-size: 20px;
+    color: #f1f2f3;
 }
 
 .navbar li{
@@ -46,7 +49,8 @@ main{
 
 .link {
     text-decoration: none;
-    color: rgb(0 124 183);
+    /* color: rgb(0 124 183); */
+    
 }
 
 .link h1{
@@ -70,6 +74,11 @@ main{
 
 .icon-responsive{
     display: none;
+    color: rgb(228, 228, 228);
+}
+
+.dropdown-item{
+    color: #434343 !important;
 }
 
 
@@ -93,8 +102,9 @@ main{
  .responsive-link{
     padding: 10px;
     border-bottom: solid white 1px;
-    color: rgb(239, 239, 239);
-    background-color: #4d7ecb;
+    /* color: rgb(239, 239, 239); */
+    /* background-color: #4d7ecb; */
+    background-color: #2b4978;
  }
 
 
@@ -183,7 +193,7 @@ main{
     text-align: center;
 }
 
-.text-section h2{
+.text-section h1{
     margin-bottom: 5px;
     font-size: 2rem;
     color: rgb(60, 193, 193);
@@ -222,7 +232,7 @@ main{
     text-align: center;
 }
 
-.text-button h1, a{
+.text-button h2, a{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -478,7 +488,12 @@ main{
     bottom: 30px;
     right: 40px;
     z-index: 1;
+    
 }
+
+
+
+
 
 .btn-wsp a{
     width: 100%;
@@ -490,7 +505,16 @@ main{
     align-items: center;
     text-decoration: none;
     box-shadow: 1px 1px rgb(110, 110, 110);
+    animation: wsp-animated 2.5s infinite;
 }
+
+
+@keyframes wsp-animated {
+    0% { filter:brightness(1) ; }
+    50% { filter:brightness(1.5) }
+    100% { filter:brightness(1); }
+  }
+
 
 .btn-wsp a:hover{
     background-color: green;
@@ -577,7 +601,7 @@ main{
 
 
 .info-map{
-    padding-top: 15px;
+    padding-top: 35px;
 }
 
 .help-container{
