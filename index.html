@@ -13,12 +13,12 @@
     <script src="https://kit.fontawesome.com/56e753ffcd.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-    <?php include("mail.php"); ?>
     
     <link rel="icon" type="image/jpg" href="/img/Stylos icon.png">
     <title>Styloschool - Uniformes escolares</title>
@@ -259,46 +259,50 @@
         <section id="contacto" class="container-section">
             <div class="container">
                 <h2 class="heading-form">Contacto</h2>
-                <form method="post" class="form-container">
+                <form id="form" class="form-container">
                     <div class="flex-input">
                         <div class="inputBox">
                             <span>Nombre :</span>
-                            <input type="text" name="name" class="box" required placeholder="Ingresa tu nombre" maxlength="20">
+                            <input id="name" type="text" name="name" class="box" required placeholder="Ingresa tu nombre" maxlength="20">
                         </div>
                         <div class="inputBox">
                             <span>Número de teléfono :</span>
-                            <input type="number" name="number" class="box" required placeholder="Ingresa tu número de teléfono" min="0">
+                            <input id="number" type="number" name="number" class="box" required placeholder="Ingresa tu número de teléfono" min="0">
                         </div>
                         <div class="inputBox">
                             <span>Establecimiento :</span>
-                            <select name="establecimiento" class="box">
-                                <option value="">Colegio Las Condes</option>
-                                <option value="">Colegio Coyancura</option>
-                                <option value="">Colegio Nuestra Señora del Rosario</option>
-                                <option value="">Colegio Leonardo Da Vinci</option>
-                                <option value="">Colegio San Francisco Técnico Profesional</option>
-                                <option value="">Colegio Bicentenadio Simón Bolivar</option>
-                                <option value="">Colegio San Francisco del Alba</option>
-                                <option value="">Otro</option>
+                            <select id="college" name="establecimiento" class="box">
+                                <option value="Colegio Las Condes">Colegio Las Condes</option>
+                                <option value="Colegio Coyancura">Colegio Coyancura</option>
+                                <option value="Colegio Nuestra Señora del Rosario">Colegio Nuestra Señora del Rosario</option>
+                                <option value="Colegio Leonardo Da Vinci">Colegio Leonardo Da Vinci</option>
+                                <option value="Colegio San Francisco Técnico Profesional">Colegio San Francisco Técnico Profesional</option>
+                                <option value="Colegio Bicentenadio Simón Bolivar">Colegio Bicentenadio Simón Bolivar</option>
+                                <option value="Colegio San Francisco del Alba">Colegio San Francisco del Alba</option>
+                                <option value="Otro">Otro</option>
                             </select>
                         </div>
-                        <div class="inputBox">
+                        <div  class="inputBox">
                             <span>Asunto :</span>
-                            <input type="text" name="asunto" class="box" required placeholder="Asunto" maxlength="50">
+                            <input id="asunto" type="text" name="asunto" class="box" required placeholder="Asunto" maxlength="50">
                         </div>
-                        <div class="inputBox">
+                        <div  class="inputBox">
                             <span>Correo :</span>
-                            <input type="text" name="email" class="box" required placeholder="nombre@gmail.com" maxlength="50">
+                            <input id="email" type="text" name="email" class="box" required placeholder="nombre@gmail.com" maxlength="50">
                         </div>
                 
                         <div class="inputBox">
                             <span>Mensaje :</span>
-                            <textarea class="box" name="mensaje" id="" required></textarea>
+                            <textarea class="box" name="message" id="message" required></textarea>
                 
                         </div>
                     </div>
                 
-                    <input type="submit" value="Enviar" class="button" name="order">
+                    <input onclick="submitform()" type="submit" value="enviar" class="button" name="enviar">
+
+                    
+                    <div class="err"> </div>
+
                 
                 </form>
 
