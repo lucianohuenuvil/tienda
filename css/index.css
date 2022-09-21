@@ -63,7 +63,7 @@ main{
 }
 
 .link:hover{
-    color: rgb(53, 70, 127) !important;
+    color: rgb(154, 174, 239) !important;
 }
 
 
@@ -106,6 +106,7 @@ main{
     /* background-color: #4d7ecb; */
     background-color: #2b4978;
  }
+
 
 
 /* carrusel */
@@ -237,6 +238,7 @@ main{
     margin: 0;
     text-decoration: none;
     font-size: 30px;
+    color: #3e3e3e;
 }
 
 
@@ -757,6 +759,10 @@ main{
     
     .help-est2{
         width: 100%;
+    }
+
+    .text-section h1{
+        font-size: 1.5rem;
     }
 
 }
