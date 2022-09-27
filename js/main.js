@@ -1,33 +1,52 @@
+
+const form = document.getElementById("form"); 
+
+
+let validaCorreo = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+
+let errores = {
+    name:"El nombre es inválido",
+    correo: "El correo es inválido",
+    numero: "El número es inválido",
+    asunto: "El asunto es inválido",
+    mensaje: "El mensaje es inválido",
+    success:"El formulario fue enviado correctamente"
+}
+
+
+
 addEventListener('DOMContentLoaded', () => {
     setInterval(slide,6000);
-    
   })
    
   
   
-  function slide() {
-      let idSlide = document.getElementsByClassName('carousel-slide');
-      for (index of idSlide){
-        switch (index.style.marginLeft){
-            case "":
-                index.style.marginLeft = "0%"
-                break;
-            case "0%":
-                index.style.marginLeft = "-100%";
-                break;
-            // case "-100%":
-            //     index.style.marginLeft = "-200%"
-            //     break;
-            // case "-200%":
-            //     index.style.marginLeft = "-300%"
-            //     break;
-            case "-100%":
-                index.style.marginLeft = "0%"
-                break;
-        }
-      }
 
-  }
+
+
+function slide() {
+    let idSlide = document.getElementsByClassName('carousel-slide');
+    for (index of idSlide){
+    switch (index.style.marginLeft){
+        case "":
+            index.style.marginLeft = "0%"
+            break;
+        case "0%":
+            index.style.marginLeft = "-100%";
+            break;
+        // case "-100%":
+        //     index.style.marginLeft = "-200%"
+        //     break;
+        // case "-200%":
+        //     index.style.marginLeft = "-300%"
+        //     break;
+        case "-100%":
+            index.style.marginLeft = "0%"
+            break;
+    }
+    }
+
+}
 
 
 
@@ -129,72 +148,11 @@ const scrollnav = () => $(document).ready(function(){
 /* VALIDACIÓN DE FORMULARIO*/
 
 
-let validaCorreo = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-
-let errores = {
-    name:"El nombre es inválido",
-    correo: "El correo es inválido",
-    numero: "El número es inválido",
-    asunto: "El asunto es inválido",
-    mensaje: "El mensaje es inválido",
-    success:"El formulario fue enviado correctamente"
-}
-
-
-
-    
-
-function submitform() {
-
-
-    let err = document.querySelector(".err");   
-
-
-    form.addEventListener("submit", async (e) => {
-
-        e.preventDefault();
-
-        let name = e.target.name.value;
-        let number = e.target.number.value;
-        let email = e.target.email.value;
-        let college = e.target.college.value;
-        let asunto = e.target.asunto.value;
-        let message = e.target.message.value;
-
- 
-        if(validarCampos(name, number, email, asunto, message, err)){
-
-            /*ENVIAR FORMULARIO */
-            try{
-                const resp = await sendEmail();
-                if (resp.status === 200){
-                    err.classList.remove("errorForm");
-                    err.classList.add("successForm");
-                    err.innerHTML = "Se ha enviado el formulario correctamente";
-                }
-                else{
-                    err.classList.remove("successForm");
-                    err.classList.add("errorForm");
-                    throw "Error de comunicación";
-
-                }
-            } catch(Error) {
-                err.classList.remove("successForm");
-                err.classList.add("errorForm");                
-            }
-        }
-        else{
-            err.classList.remove("errorForm");
-            err.classList.add("successForm");
-        }
-
-    })
-
-};
 
 
 const sendEmail = async() => {
-       
+
+    console.log("intentos" + 1)   
     const formHTML = document.getElementById("form");
     const formData = new FormData(formHTML);
    
@@ -233,5 +191,51 @@ const validarCampos = (name, number, email, asunto, message, err) => {
     return true;
 
 }
+
+
+
+
+
+
+
+form.addEventListener("submit", async (e) => {
+
+    let err = document.querySelector(".err");
+    e.preventDefault()
+
+    let name = e.target.name.value;
+    let number = e.target.number.value;
+    let email = e.target.email.value;
+    let college = e.target.college.value;
+    let asunto = e.target.asunto.value;
+    let message = e.target.message.value;
+
+    if(validarCampos(name, number, email, asunto, message, err)){
+        console.log("holamunfo")
+        /*ENVIAR FORMULARIO */
+        try{
+            const resp = await sendEmail();
+            if (resp.status === 200){
+                err.classList.remove("errorForm");
+                err.classList.add("successForm");
+                console.log("Enbviado")
+                err.innerHTML = "Se ha enviado el formulario correctamente";
+
+            }
+            else{
+                err.classList.remove("successForm");
+                err.classList.add("errorForm");
+                throw "Error de comunicación";
+            }
+        } catch(Error) {
+            err.classList.remove("successForm");
+            err.classList.add("errorForm");                
+        }
+    }
+    else{
+        err.classList.remove("successForm");
+        err.classList.add("errorForm");  
+    }
+})
 
 
