@@ -116,7 +116,7 @@ const scrollnav = () => $(document).ready(function(){
   
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 600, function(){
+        }, 800, function(){
             
             window.location.hash = hash;
         });
@@ -146,11 +146,11 @@ let errores = {
 
 function submitform() {
 
-    const form = document.getElementById("form");
+
     let err = document.querySelector(".err");   
 
 
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
 
         e.preventDefault();
 
@@ -163,35 +163,47 @@ function submitform() {
 
  
         if(validarCampos(name, number, email, asunto, message, err)){
-            err.classList.remove("errorForm");
-            err.classList.add("successForm");
-            err.innerHTML = "Se ha enviado el formulario correctamente";
-         }else{
-            err.classList.remove("successForm");
-            err.classList.add("errorForm");
 
-
-
-
-
-            /*Validación ajax */
-            var datos = 'correo=' + email + '&mensaje=' + message;
-            $.ajax({
-                type: "POST",
-                url: "mail.php",
-                data: datos,
-                success: function(res) {
-                    console.log("holamundo")
-                },
-                error: function(res) {
-                    console.log("error")
+            /*ENVIAR FORMULARIO */
+            try{
+                const resp = await sendEmail();
+                if (resp.status === 200){
+                    err.classList.remove("errorForm");
+                    err.classList.add("successForm");
+                    err.innerHTML = "Se ha enviado el formulario correctamente";
                 }
-            });
+                else{
+                    err.classList.remove("successForm");
+                    err.classList.add("errorForm");
+                    throw "Error de comunicación";
+
+                }
+            } catch(Error) {
+                err.classList.remove("successForm");
+                err.classList.add("errorForm");
+                console.log(Error);
+                
+            }
         }
 
     })
 
-}
+};
+
+
+const sendEmail = async() => {
+       
+    const formHTML = document.getElementById("form");
+    const formData = new FormData(formHTML);
+   
+    await fetch ("https://home-styloschool.cl/testmail.php", {
+        method: "POST",
+        body:formData
+    });
+    
+    
+};
+
 
 
 
