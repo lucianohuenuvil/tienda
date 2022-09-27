@@ -196,7 +196,7 @@ const sendEmail = async() => {
     const formHTML = document.getElementById("form");
     const formData = new FormData(formHTML);
    
-    await fetch ("https://home-styloschool.cl/testmail.php", {
+    return await fetch ("https://home-styloschool.cl/testmail.php", {
         method: "POST",
         body:formData
     });
