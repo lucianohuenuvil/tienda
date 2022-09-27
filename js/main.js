@@ -180,10 +180,12 @@ function submitform() {
                 }
             } catch(Error) {
                 err.classList.remove("successForm");
-                err.classList.add("errorForm");
-                console.log(Error);
-                
+                err.classList.add("errorForm");                
             }
+        }
+        else{
+            err.classList.remove("errorForm");
+            err.classList.add("successForm");
         }
 
     })
