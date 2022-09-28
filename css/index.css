@@ -701,10 +701,11 @@ main{
     font-size: 10px;
 }
 
-.container-product h5{
+.container-product h2{
     width: 100%;
     text-align: center;
     border-bottom: #666 solid 2px;
+    font-size: 25px;
    
 }
 
@@ -724,6 +725,7 @@ main{
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     padding-bottom: 0;
+    margin: 0;
 }
 
 .product-detail b {
@@ -805,6 +807,18 @@ main{
 
     .container-slide-responsive{
         display: flex;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 370px){
+
+    .container-product img {
+        height: 50%;
+ 
     }
 
 }

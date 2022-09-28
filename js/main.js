@@ -1,7 +1,4 @@
-
 const form = document.getElementById("form"); 
-
-
 let validaCorreo = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
 let errores = {
@@ -145,14 +142,13 @@ const scrollnav = () => $(document).ready(function(){
 });
 
 
-/* VALIDACIÓN DE FORMULARIO*/
 
 
+/* VALIDACIÓN Y ENVÍO  DE FORMULARIO*/
 
 
 const sendEmail = async() => {
 
-    console.log("intentos" + 1)   
     const formHTML = document.getElementById("form");
     const formData = new FormData(formHTML);
    
@@ -169,8 +165,6 @@ const sendEmail = async() => {
 
 
 const validarCampos = (name, number, email, asunto, message, err) => {
-
-  
     if (name.length < 2 || name.length > 20){
         err.innerHTML = `Error: ${errores.name}`;
         return false;
@@ -187,7 +181,6 @@ const validarCampos = (name, number, email, asunto, message, err) => {
         err.innerHTML = `Error: ${errores.asunto}`;
         return false;
     }  
-    
     return true;
 
 }
@@ -199,10 +192,9 @@ const validarCampos = (name, number, email, asunto, message, err) => {
 
 
 form.addEventListener("submit", async (e) => {
-
-    let err = document.querySelector(".err");
     e.preventDefault()
 
+    let err = document.querySelector(".err");
     let name = e.target.name.value;
     let number = e.target.number.value;
     let email = e.target.email.value;
@@ -211,14 +203,13 @@ form.addEventListener("submit", async (e) => {
     let message = e.target.message.value;
 
     if(validarCampos(name, number, email, asunto, message, err)){
-        console.log("holamunfo")
         /*ENVIAR FORMULARIO */
         try{
             const resp = await sendEmail();
             if (resp.status === 200){
                 err.classList.remove("errorForm");
                 err.classList.add("successForm");
-                console.log("Enbviado")
+                console.log("Enviado")
                 err.innerHTML = "Se ha enviado el formulario correctamente";
 
             }
