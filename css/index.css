@@ -419,12 +419,13 @@ main{
 }
 
 
-.text-college h4{
+.text-college h2{
     width: 100%;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+    color: #626262;
 }
 
 /*scroll colegios*/
