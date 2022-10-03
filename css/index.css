@@ -20,10 +20,9 @@ main{
     top: 0;
     width: 100%;
     z-index: 1;
-    /* background-color: rgb(255, 255, 255); */
-    background-color: rgb(34, 154, 175);
-    /* box-shadow: 1px 1px 8px #888888; */
-    box-shadow: 1px 1px 2px #888888;
+    background-color: white; 
+    box-shadow: 1px 1px 6px #888888; 
+
 }
 
 .navbar{
@@ -39,7 +38,7 @@ main{
 
 .navbar a{
     font-size: 20px;
-    color: #f1f2f3;
+    color: rgb(48, 48, 48);
 }
 
 .navbar li{
@@ -63,18 +62,18 @@ main{
 }
 
 .link:hover{
-    color: rgb(154, 174, 239) !important;
+    color: rgb(131, 118, 118) !important;
 }
 
 
 .view-college a:hover{
-    color: #144490;
+    color: #5d6571;
 }
 
 
 .icon-responsive{
     display: none;
-    color: rgb(228, 228, 228);
+    color: black; 
 }
 
 .dropdown-item{
@@ -104,7 +103,8 @@ main{
     border-bottom: solid white 1px;
     /* color: rgb(239, 239, 239); */
     /* background-color: #4d7ecb; */
-    background-color: #198989;
+    background-color: #69abab;
+    color: white !important;
  }
 
 
