@@ -683,7 +683,7 @@ main{
     border: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     background-color: white;
@@ -705,9 +705,13 @@ main{
 .container-product h2{
     width: 100%;
     text-align: center;
-    border-bottom: #666 solid 2px;
+    border-bottom: rgb(163, 163, 163) solid 1px;
     font-size: 25px;
    
+}
+
+.container-product h5{
+    padding-top: 10px;
 }
 
 
