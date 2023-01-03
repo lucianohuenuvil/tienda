@@ -673,6 +673,41 @@ main{
 }
 
 
+
+/*DEPORTES*/
+
+.container-sport{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+.sport-background{
+    width: 600px;
+    position: relative;
+}
+
+
+.sport-background img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sport-text{
+    padding: 15px;
+    width: 400px;
+}
+
 /* PRODUCTOS */
 
 .container-product{
