@@ -33,53 +33,21 @@
     <link rel="icon" type="image/jpg" href="/img/Stylos icon.png">
     <link rel="stylesheet" href="css/index.css">
 
-    <title>Styloschool - Uniformes escolares</title>
+    <title>Uniformes Escolares - Styloschool</title>
 
 </head>
 
 <body>
-    <header  class="header">
-        <nav class="navbar container">
-            <a class="link" href=""> <img src="/img/logo.png" alt=""></a>
-            <a class="link links-nav" href="#nosotros">Nosotros</a>
-
-            <li class=" nav-item dropdown">
-                <a class="link links-nav dropdown-toggle" href="#" role="button" data-toggle="dropdown">Colegios</a>
-                <div class="links-nav dropdown-menu">
-                    <a class="dropdown-item" href="/pages/colegio-las-condes ">Colegio Las Condes</a>
-                    <a class="dropdown-item"  href="/pages/colegio-coyancura">Colegio Coyancura</a>
-                    <a class="dropdown-item" href="/pages/colegio-nuestra-senora-del-rosario ">Colegio Nuestra Señora del Rosario</a>
-                    <a class="dropdown-item" href="/pages/colegio-leonardo-da-vinci ">Colegio Leonardo Da Vinci</a>
-                    <a class="dropdown-item" href="/pages/colegio-san-francisco ">Colegio San Francisco Técnico Profesional</a>
-                    <a class="dropdown-item"  href="/pages/colegio-simon-bolivar">Liceo Bicentenario Simón Bolivar</a>
-                    <a class="dropdown-item" href="/pages/colegio-san-francisco-del-alba ">Colegio San Francisco del Alba</a>
-                </div>
-            </li>       
-              
-            <a class="link links-nav" href="#contacto">Contacto</a>
-            <a class="link links-nav" href="#ubicacion">Ubicación</a>
-
-
-            <div class="icon-responsive">
-                <a onclick="navresponsive()"> <i  class="fas fa-bars"></i> </a>
-            </div>
-                    
-            <div id="button-responsive" class="navbar-responsive showmenu">
-                <a class="link responsive-link" href="#nosotros">Nosotros</a>
-                <a class="link responsive-link" href="/pages/colegios ">Colegios</a>
-                <a class="link responsive-link" href="#ubicacion">Ubicación</a>
-                <a class="link responsive-link" href="#contacto">Contacto</a>
-            </div>
-        </nav>
-    
+     <!-- NAVBAR -->
+    <header class="header">
+        <nav id="extends_navbar" class="navbar container"> </nav>
     </header>
 
-    <section  class="container-slide">
+    <!--BANNER -->
+    <section id="extends_carousel" class="container-slide">
         <div id="slide" class="carousel-slide">
             <div class="carousel-items">
                 <a href="/pages/colegios "><img src="/img/banner1.webp" alt="First slide" title="nosotros" ></a>
-                
-                
             </div>
             <div class="carousel-items">
                 <img src="/img/banner2.webp" alt="Second slide" title="nuestros horarios">
@@ -100,11 +68,7 @@
     </section>
 
 
-  
-
-
     <!--BANNER RESPONSIVE-->
-
     <section  class="container-slide-responsive">
 
         <div id="slide" class="carousel-slide">
@@ -129,8 +93,8 @@
 
 
 
-
-    <main >
+    <main>
+        <!-- Sección de categorías -->
         <section id="categorias" class="container-section">
             <div class="container">
                 <div class="text-section">
@@ -166,7 +130,7 @@
                     <div class="container-box">
                         <img src="/img/categorias/deporte.webp" alt="categoria de deportes" title="deportes">
                         <div class="text-button">
-                            <h2>Vestuario Deportivo</h2>
+                            <h2>Ropa Deportiva</h2>
                             <a class="button" href="/pages/ropa-deportiva ">Ver productos</a>
                         </div>
 
@@ -194,14 +158,17 @@
         
         </section>
 
-
-
+        <!-- Sección de nosotros -->
         <section id="nosotros" class="container-section">
             <div class="container">
                 <div class="about-us">
                     <h2 class="heading-form">SOBRE NOSOTROS</h2>
+                    <p> ¡Bienvenidos a nuestra tienda de uniformes escolares! Ofrecemos la mejor calidad y variedad en ropa escolar para estudiantes de todas las edades. Contamos con una amplia selección de uniformes en venta a precios asequibles para que puedas hacer tu compra de manera fácil y cómoda. Además, ofrecemos un servicio de personalización de polerones para alumnos de 4tos medio, para que puedas agregar los nombres de los estudiantes y el logotipo deseado. 
+                    Gracias por elegirnos para satisfacer tus necesidades de uniformes escolares. ¡Esperamos que encuentres lo que estás buscando!</p>
+                    
                     <p>"Styloschool" nace a principios del año 2013, el ingreso al mercado surge de la necesidad que también como padres y apoderados enfrentamos respecto de los requerimientos de prendas escolares de nuestros hijos, estamos comprometidos a brindarles una atención personalizada con productos de buena calidad, stock permanente según temporada y a los precios mas convenientes.
-                        Teniendo presente que la imagen de nuestros hijos es lo primero, hemos diseñado prendas exclusivas con diseños especiales para niñas y niños, con la calidad y presentación que ellos merecen.</p>
+                        Teniendo presente que la imagen de nuestros hijos es lo primero, hemos diseñado prendas exclusivas con diseños especiales para niñas y niños, con la calidad y presentación que ellos merecen.
+                    </p>
                 </div>
             </div>
 
@@ -209,7 +176,7 @@
 
 
 
-
+        <!-- Sección de colegios -->
         <section id="colegios" class="container-section">
             <div class="container">
                 <div class="college-container">
@@ -266,8 +233,7 @@
             </div>
         </section>
 
-
-
+        <!-- Formulario de contacto -->
         <section id="contacto" class="container-section">
             <div class="container">
                 <h2 class="heading-form">Contacto</h2>
@@ -322,129 +288,29 @@
 
         </section>
 
-
-        <section id="ubicacion" class="container container-section">
-            <div class="container">
-                <h2 class="heading-form">¿Dónde estamos ubicados?</h2>
-                <div class="container-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5668970826378!2d-70.56677258424588!3d-33.40846180274575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedd0fa0de87%3A0x8fddeef43d721a48!2sAv.%20Apoquindo%206415%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1655149171940!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-                <div class="info-map">
-                    <h3 class="heading-form" >¿Cómo llegar?</h3>
-                    <ul>
-                        <li><p>Si vienes en transporte público, nos encontramos cerca de metro Manquehue!</p></li>
-                        <li><p>Si vienes en vehículo, puedes estacionar directamente en av. apoquindo 6415, siempre y cuando haya disponibilidad</p></li>
-                        <li><p>También puedes estacionar al lado del estadio Italiano, ubicado en la calle "Esteban Dell'orto 6579"</p></li>
-                    </ul>
-                </div>
+         <!-- Como llegar a la tienda -->
+        <section id="extends_map" class="container container-section"> </section>
 
 
-                <div class="help-container">
-                    <div class="help-est">
-                        <div class="text-est">
-                            <p>Estacionamiento Av. Apoquindo 6415</p>
-                        </div>
-                        <img class="img-est" src="/img/estacionamiento1.webp" alt="estacionamiento de la sucursal" title="estacionamiento local">
-                    </div>
 
-                    <div class="help-est">
-                        <div class="text-est">
-                            <p>Estacionamiento Estadio Italiano</p>
-                        </div>
-                        <img class="img-est"src="/img/estacionamiento2.webp" alt="estacionamiento del estadio italiano" title="estacionamiento del estadio">
-                    <div>          
-                </div>     
-            </div>
-        </section>
-
-            
-        <section class="container-section">
-            <div class="container">
-                <div class="footer-container">
-                    <div class="box-footer">
-                        <i class="fas fa-phone"></i>
-                        <h3>Teléfonos</h3>
-                        <p> +569 6359 3710</p>
-                        <p> 2 3224 7874</p>
-                    </div>
-                
-                    <div class="box-footer">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Dirección</h3>
-                        <p>Av. Apoquindo 6415, Las Condes (Galería Rampa de las Flores) - Local 111 - piso 4 </p>
-                    </div>
-                
-                    <div class="box-footer">
-                        <i class="fas fa-clock"></i>
-                        <h3>Horarios de atención</h3>
-                        <p>L / V: 10:00am a 19:00pm</p>
-                        <p>S: 11:00am a 14:00 pm</p>
-                    </div>
-                
-                    <div class="box-footer">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Correo</h3>
-                        <p>styloschool@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+         <!-- Información de la tienda -->    
+        <section id="extends_information" class="container-section"></section>
 
 
+         <!-- Boton de whatsapp -->
         <div class="btn-wsp">
             <a target="_blank" href="https://api.whatsapp.com/send?phone=56963593710">  <i class="fa-brands fa-whatsapp"> </i> </a>  
         </div>
 
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted">
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-                    <div class="row mt-3 text-footer">
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <h6 class="text-uppercase fw-bold mb-4"> <i class="me-3"> <img src="/img/Stylos icon.png" alt="" height="25px" ></i>Styloschool </h6>
-                            <p> Atrévete y marca la diferencia </p>
-                            <p> Tu imagen en nuestras manos! </p>
-                        </div>
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Categorías</h6>
-                            <p><a href="/pages/colegios " class="text-reset">Uniformes escolares</a></p>
-                            <p><a href="/pages/no-disponible " class="text-reset">Vestuario corporativo</a></p>
-                            <p><a href="/pages/no-disponible " class="text-reset">Vestuario deportivo</a></p>
-                            <p><a href="/pages/no-disponible " class="text-reset">Uniformes genéricos</a> </p>
-                        </div>
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4"> -</h6>
-                            <p> <a href="/pages/no-disponible " class="text-reset">Merchandising</a></p>
-                            <p> <a href="/pages/no-disponible " class="text-reset">Otros</a> </p>
-                            <p><a href="#contacto" class="text-reset">Contacto</a></p>
-                            <p> <a href="#ubicacion" class="text-reset">Ubicación</a> </p>
-                        </div>
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 class="text-uppercase fw-bold mb-4">Redes sociales</h6>
-                            <p><i class="fab fa-whatsapp me-3"></i></i> <a class="text-reset" href="">Whatsapp</a> </p>
-                            <p><i class="fab fa-facebook-f me-3"></i><a class="text-reset" href="">Facebook</a> </p>
-                            <p><i class="fab fa-instagram me-3" ></i><a class="text-reset" href="">Instagram</a> </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-                © 2022 Todos los derechos a:
-                <a class="text-reset fw-bold" href="/">Styloschool</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+        <footer id="extends_footer" class="text-center text-lg-start bg-footer text-muted"> </footer>
 
     </main>
 
 
     <script src="js/main.js"></script>
+    <script src="js/extends.js"></script>
 
 </body>
 </html>

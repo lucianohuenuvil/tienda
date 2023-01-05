@@ -28,58 +28,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/index.css">
     <script src="https://kit.fontawesome.com/56e753ffcd.js" crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
+
     <link rel="icon" type="image/jpg" href="../img/Stylos icon.png">
     <title>Colegio Coyancura - Styloschool</title>
 </head>
 <body>
-    <header  class="header">
-        <nav class="navbar container">
-            <a class="link" href="/"> <img src="../img/logo.png" alt=""></a>
-            <a class="link links-nav" href="/#nosotros">Nosotros</a>
-
-            <li class=" nav-item dropdown">
-                <a class="link links-nav dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-                  Colegios
-                </a>
-                <div class="links-nav dropdown-menu">
-                    <a class="dropdown-item" href="/pages/colegio-las-condes ">Colegio Las Condes</a>
-                    <a class="dropdown-item"  href="/pages/colegio-coyancura">Colegio Coyancura</a>
-                    <a class="dropdown-item" href="/pages/colegio-nuestra-senora-del-rosario ">Colegio Nuestra Señora del Rosario</a>
-                    <a class="dropdown-item" href="/pages/colegio-leonardo-da-vinci ">Colegio Leonardo Da Vinci</a>
-                    <a class="dropdown-item" href="/pages/colegio-san-francisco ">Colegio San Francisco Técnico Profesional</a>
-                    <a class="dropdown-item" href="/pages/colegio-simon-bolivar">Liceo Bicentenario Simón Bolivar</a>
-                    <a class="dropdown-item" href="/pages/colegio-san-francisco-del-alba ">Colegio San Francisco del Alba</a>
-                  </div>
-              </li>
-              
-              
-            <a class="link links-nav" href="/#contacto">Contacto</a>
-            <a class="link links-nav" href="/#ubicacion">Ubicación</a>
-
-
-            <div class="icon-responsive">
-                <a onclick="navresponsive()"> <i  class="fas fa-bars"></i> </a>
-            </div>
-
-
-                    
-            <div id="button-responsive" class="navbar-responsive showmenu">
-                <a class="link responsive-link" href="/#nosotros">Nosotros</a>
-                <a class="link responsive-link" href="/pages/colegios ">Colegios</a>
-                <a class="link responsive-link" href="/#ubicacion">Ubicación</a>
-                <a class="link responsive-link" href="/#contacto">Contacto</a>
-            </div>
-
-        </nav>
-
-
-        
+     <!-- NAVBAR -->
+     <header class="header">
+        <nav id="extends_navbar" class="navbar container"> </nav>
     </header>
+
 
 <main >
     <section id="change" class="container-section">
         <div class="container">
+            
+            <!--Pagina Actual-->
+            <ul id="breadcrumb" class="breadcrumb-trail"> </ul>
+
+
             <div class="text-section">
                 <h1>Colegio Coyancura</h1>
             </div>
@@ -151,111 +118,28 @@
     </section>
 
 
-        
-    <section class="container-section">
-        <div class="container">
-            <div class="footer-container">
-                <div class="box-footer">
-                    <i class="fas fa-phone"></i>
-                    <h3>Teléfonos</h3>
-                    <p> +569 6359 3710</p>
-                    <p>  2 3224 7874</p>
 
-                </div>
-            
-                <div class="box-footer">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Dirección</h3>
-                    <p>Av. Apoquindo 6415, Las Condes - Local 111 - piso 4</p>
-
-                </div>
-            
-                <div class="box-footer">
-                    <i class="fas fa-clock"></i>
-                    <h3>Horarios de atención</h3>
-                    <p>L / V: 10:00am a 19:00pm</p>
-                    <p>S: 11:00am a 14:00 pm</p>
-                </div>
-            
-                <div class="box-footer">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Correo</h3>
-                    <p>styloschool@gmail.com</p>
-                </div>
-            </div>
+    <!-- Información de la tienda -->    
+    <section id="extends_information" class="container-section"></section>
 
 
 
-
-
-        </div>
-
-
-    
-
-    
-    </section>
-
+    <!-- Boton de whatsapp -->
     <div class="btn-wsp">
         <a target="_blank" href="https://api.whatsapp.com/send?phone=56963593710">  <i class="fa-brands fa-whatsapp"> </i> </a>  
     </div>
 
 
     
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-
-
-
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3 text-footer">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4"> <i class="me-3"> <img src="/img/Stylos icon.png" alt="" height="25px" ></i>Styloschool </h6>
-                        <p> Atrévete y marca la diferencia </p>
-                        <p> Tu imagen en nuestras manos! </p>
-                    </div>
-
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Categorías</h6>
-                        <p><a href="/pages/colegios " class="text-reset">Uniformes escolares</a></p>
-                        <p><a href="#!" class="text-reset">Vestuario corporativo</a></p>
-                        <p><a href="#!" class="text-reset">Vestuario deportivo</a></p>
-                        <p><a href="#!" class="text-reset">Uniformes genéricos</a> </p>
-                    </div>
-   
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4"> -</h6>
-                        <p> <a href="#!" class="text-reset">Merchandising</a></p>
-                        <p> <a href="#!-----" class="text-reset">Otros</a> </p>
-                        <p><a href="#contacto" class="text-reset">Contacto</a></p>
-                        <p> <a href="#ubicacion" class="text-reset">Ubicación</a> </p>
-                    </div>
-
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Redes sociales</h6>
-                        <p><i class="fab fa-whatsapp me-3"></i></i> <a class="text-reset" href="">Whatsapp</a> </p>
-                        <p><i class="fab fa-facebook-f me-3"></i><a class="text-reset" href="">Facebook</a> </p>
-                        <p><i class="fab fa-instagram me-3" ></i><a class="text-reset" href="">Instagram</a> </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2022 Todos los derechos a:
-            <a class="text-reset fw-bold" href="/">Styloschool</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+    <footer id="extends_footer" class="text-center text-lg-start bg-light text-muted"> </footer>
 
 
 </main>
 
-
+<script src="../js/main.js"></script>
+<script src="../js/extends.js"></script>
 
 
 </body>

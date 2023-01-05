@@ -1,4 +1,5 @@
 const form = document.getElementById("form"); 
+
 let validaCorreo = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
 let errores = {
@@ -191,7 +192,7 @@ const validarCampos = (name, number, email, asunto, message, err) => {
 
 
 
-form.addEventListener("submit", async (e) => {
+form?.addEventListener("submit", async (e) => {
     e.preventDefault()
 
     let err = document.querySelector(".err");
