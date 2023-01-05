@@ -3,7 +3,7 @@
 
 let htmlNavbar = `  
     <a class="link" href="/"> <img src="/img/logo.png" alt=""></a>
-    <a class="link links-nav" href="#nosotros">Nosotros</a>
+    <a class="link links-nav" href="/#nosotros">Nosotros</a>
 
     <li class=" nav-item dropdown">
         <a class="link links-nav dropdown-toggle" href="#" role="button" data-toggle="dropdown">Colegios</a>
@@ -34,8 +34,8 @@ let htmlNavbar = `
     </li>
 
     
-    <a class="link links-nav" href="#contacto">Contacto</a>
-    <a class="link links-nav" href="#ubicacion">Ubicación</a>
+    <a class="link links-nav" href="/#contacto">Contacto</a>
+    <a class="link links-nav" href="/#ubicacion">Ubicación</a>
 
 
     <div class="icon-responsive">
@@ -43,13 +43,13 @@ let htmlNavbar = `
     </div>
             
     <div id="button-responsive" class="navbar-responsive showmenu">
-        <a class="link responsive-link" href="#nosotros">Nosotros</a>
+        <a class="link responsive-link" href="/#nosotros">Nosotros</a>
         <a class="link responsive-link" href="/pages/colegios ">Colegios</a>
         <a class="link responsive-link" href="/pages/ropa-deportiva ">Ropa Deportiva</a>
         <a class="link responsive-link" href="/pages/no-disponible ">Mercancía</a>
         <a class="link responsive-link" href="/pages/no-disponible ">Uniformes Genéricos</a>
-        <a class="link responsive-link" href="#ubicacion">Ubicación</a>
-        <a class="link responsive-link" href="#contacto">Contacto</a>
+        <a class="link responsive-link" href="/#ubicacion">Ubicación</a>
+        <a class="link responsive-link" href="/#contacto">Contacto</a>
     </div>  `
 
 

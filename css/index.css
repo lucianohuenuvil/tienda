@@ -132,7 +132,7 @@ main{
 .carousel-slide{
     display: flex;
     flex-direction: row;
-    width: 200%;
+    width: 300%;
     transition: 1s;
 }
 
@@ -142,9 +142,19 @@ main{
 
 .carousel-items img{
     width: 100%;
+    height: 100%;
     filter: brightness(90%);
     text-align: center;
 }
+
+
+.carousel-items video{
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    text-align: center;
+}
+
 
 .icon-container{
     display: flex;
