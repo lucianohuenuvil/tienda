@@ -287,8 +287,6 @@ if(document.getElementById("breadcrumb"))
         case '/pages/no-disponible.html': 
             document.getElementById("breadcrumb").innerHTML = pathNOTFOUND;
             break;
-
-
     }
         
 

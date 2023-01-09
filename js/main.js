@@ -14,16 +14,28 @@ let errores = {
 let intervalo
 
 
+
+//document.querySelector("html").style = 'overflow:hidden;'
+
+
+
+
 addEventListener('DOMContentLoaded', () => {
     intervalo = setInterval(slide,6000);
+
+    if (!document.getElementById("welcome_message").style.display){
+        document.querySelector("html").style = 'overflow:hidden;'
+    }
+
+    
   })
    
   
 
 function closeMessage() {
     let message = document.getElementById("welcome_message")
-
     message.style.display = "none";
+    document.querySelector("html").style = 'overflow:scroll;'
 }
   
 
