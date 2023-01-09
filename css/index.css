@@ -890,7 +890,7 @@ main{
 .re-content{
     top: 30px;
     margin: 10px;
-    height: 60%;
+
     width: 80%;
     overflow: scroll;
     display: flex;
