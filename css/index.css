@@ -132,7 +132,7 @@ main{
 .carousel-slide{
     display: flex;
     flex-direction: row;
-    width: 300%;
+    width: 200%;
     transition: 1s;
 }
 
@@ -867,6 +867,92 @@ main{
 }
 
 
+
+
+
+
+
+
+.re-box{
+    display: flex;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    background-color: #212121e1;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+
+.re-content{
+    top: 30px;
+    margin: 10px;
+    height: 60%;
+    width: 80%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+
+.re-content::-webkit-scrollbar {
+    display: none;
+   }
+
+
+.videobox-re{
+    display: none;
+}
+   
+.videobox-re video{
+    width: 100%;  
+    height: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+   
+
+.videobox video{
+    width: 100%;  
+    height: 100%;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+
+
+.re-close-button{
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    
+}
+
+
+.ire-close-button:hover{
+    cursor: pointer;
+}
+    
+.re-close-button i{
+    font-size: 25px;
+    color: #5a5a5a;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1199px){
 
     .help-est1{
@@ -918,6 +1004,19 @@ main{
         display: flex;
     }
 
+    .videobox{
+        display: none;
+    }
+
+    .videobox-re{
+        display: block;
+    }
+
+
+    .re-content{
+        height: 100%;
+    }
+
 }
 
 
@@ -931,3 +1030,6 @@ main{
     }
 
 }
+
+
+
