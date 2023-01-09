@@ -26,7 +26,7 @@ let htmlNavbar = `
         <div class="links-nav dropdown-menu">
             <a class="dropdown-item" href="/pages/colegios">Colegios</a>
             <a class="dropdown-item"  href="/pages/no-disponible">Polerones Generacionales</a>
-            <a class="dropdown-item"  href="/pages/ropa-deportiva">Vestuario Deportivo</a>
+            <a class="dropdown-item"  href="/pages/no-disponible">Vestuario Deportivo</a>
             <a class="dropdown-item"  href="/pages/no-disponible">Vestuario Corporativo</a>
             <a class="dropdown-item"  href="/pages/no-disponible">Mercancía</a>
             
@@ -45,7 +45,7 @@ let htmlNavbar = `
     <div id="button-responsive" class="navbar-responsive showmenu">
         <a class="link responsive-link" href="/#nosotros">Nosotros</a>
         <a class="link responsive-link" href="/pages/colegios ">Colegios</a>
-        <a class="link responsive-link" href="/pages/ropa-deportiva ">Ropa Deportiva</a>
+        <a class="link responsive-link" href="/pages/no-disponible ">Ropa Deportiva</a>
         <a class="link responsive-link" href="/pages/no-disponible ">Mercancía</a>
         <a class="link responsive-link" href="/pages/no-disponible ">Uniformes Genéricos</a>
         <a class="link responsive-link" href="/#ubicacion">Ubicación</a>
@@ -144,7 +144,7 @@ let htmlFooter = `
                 <h6 class="text-uppercase fw-bold mb-4">Categorías</h6>
                 <p><a href="/pages/colegios " class="text-reset">Uniformes de colegio</a></p>
                 <p><a href="/pages/no-disponible " class="text-reset">Vestuario corporativo</a></p>
-                <p><a href="/pages/ropa-deportiva " class="text-reset">Vestuario deportivo</a></p>
+                <p><a href="/pages/no-disponible " class="text-reset">Vestuario deportivo</a></p>
                 <p><a href="/pages/no-disponible " class="text-reset">Uniformes genéricos</a> </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -278,8 +278,8 @@ if(document.getElementById("breadcrumb"))
             document.getElementById("breadcrumb").innerHTML = pathLSB;
             break;
 
-        case '/pages/ropa-deportiva':
-        case '/pages/ropa-deportiva.html': 
+        case '/pages/no-disponible':
+        case '/pages/no-disponible.html': 
             document.getElementById("breadcrumb").innerHTML = pathRDEP;
             break;
 
