@@ -278,8 +278,8 @@ if(document.getElementById("breadcrumb"))
             document.getElementById("breadcrumb").innerHTML = pathLSB;
             break;
 
-        case '/pages/no-disponible':
-        case '/pages/no-disponible.html': 
+        case '/pages/ropa-deportiva':
+        case '/pages/ropa-deportiva.html': 
             document.getElementById("breadcrumb").innerHTML = pathRDEP;
             break;
 
