@@ -31,12 +31,19 @@ addEventListener('DOMContentLoaded', () => {
   })
    
   
+/*CERRAR VENTANA DE BIENVENIDA*/
 
 function closeMessage() {
     let message = document.getElementById("welcome_message")
     message.style.display = "none";
     document.querySelector("html").style = 'overflow:scroll;'
 }
+
+const closeOuterClick = document.getElementById("welcome_message")
+closeOuterClick.addEventListener("click", () => {
+    closeOuterClick.style.display = 'none'
+    document.querySelector("html").style = 'overflow:scroll;'
+})
   
 
 

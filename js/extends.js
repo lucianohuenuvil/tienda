@@ -115,7 +115,7 @@ let htmlInformation = `
             <div class="box-footer">
                 <i class="fas fa-clock"></i>
                 <h3>Horarios de atención</h3>
-                <p>L / V: 10:00am a 19:00pm</p>
+                <p>L / V: 11:00am a 19:00pm</p>
                 <p>S: 11:00am a 14:00 pm</p>
             </div>
         
@@ -157,9 +157,9 @@ let htmlFooter = `
             </div>
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <h6 class="text-uppercase fw-bold mb-4">Redes sociales</h6>
-                <p><i class="fab fa-whatsapp me-3"></i></i> <a class="text-reset" href="">Whatsapp</a> </p>
-                <p><i class="fab fa-facebook-f me-3"></i><a class="text-reset" href="">Facebook</a> </p>
-                <p><i class="fab fa-instagram me-3" ></i><a class="text-reset" href="">Instagram</a> </p>
+                <p><i class="fab fa-whatsapp me-3"></i></i> <a class="text-reset" target="_blank"  href="https://api.whatsapp.com/send?phone=56963593710">Whatsapp</a> </p>
+                <p><i class="fab fa-facebook-f me-3"></i><a class="text-reset"  target="_blank" href="https://www.facebook.com/people/Styloschool-Uniformes/100057278446525/">Facebook</a> </p>
+                <p><i class="fab fa-instagram me-3" ></i><a class="text-reset"  target="_blank" href="https://www.instagram.com/styloschool/">Instagram</a> </p>
             </div>
         </div>
     </div>
