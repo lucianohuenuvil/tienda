@@ -23,7 +23,7 @@ let intervalo
 addEventListener('DOMContentLoaded', () => {
     intervalo = setInterval(slide,6000);
 
-    if (!document.getElementById("welcome_message").style.display){
+    if (!document.getElementById("welcome_message")?.style.display){
         document.querySelector("html").style = 'overflow:hidden;'
     }
 
@@ -40,7 +40,7 @@ function closeMessage() {
 }
 
 const closeOuterClick = document.getElementById("welcome_message")
-closeOuterClick.addEventListener("click", () => {
+closeOuterClick?.addEventListener("click", () => {
     closeOuterClick.style.display = 'none'
     document.querySelector("html").style = 'overflow:scroll;'
 })
@@ -126,7 +126,7 @@ function cambiarIzquierda()   {
   
   
 
-const navresponsive = () => {
+function navresponsive () {
     let buttonNav = document.getElementById("button-responsive");
     switch (buttonNav.style.left){
         case "":
