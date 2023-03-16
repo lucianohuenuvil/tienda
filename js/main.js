@@ -23,9 +23,16 @@ let intervalo
 addEventListener('DOMContentLoaded', () => {
     intervalo = setInterval(slide,6000);
 
-    if (!document.getElementById("welcome_message")?.style.display){
+
+    const message = document.getElementById("welcome_message")
+
+
+
+    if (message === null)
+        document.querySelector("html").style = 'overflow:scroll;'
+    else
         document.querySelector("html").style = 'overflow:hidden;'
-    }
+        
 
     
   })
