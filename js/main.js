@@ -26,9 +26,11 @@ addEventListener('DOMContentLoaded', () => {
 
     const message = document.getElementById("welcome_message")
 
+    const alertMessage = document.getElementById("alert_message")
 
 
-    if (message === null)
+
+    if (message === null && alertMessage == null)
         document.querySelector("html").style = 'overflow:scroll;'
     else
         document.querySelector("html").style = 'overflow:hidden;'
@@ -40,17 +42,24 @@ addEventListener('DOMContentLoaded', () => {
   
 /*CERRAR VENTANA DE BIENVENIDA*/
 
-function closeMessage() {
-    let message = document.getElementById("welcome_message")
-    message.style.display = "none";
+function closeMessages() {
+    let closeAlertClick = document.getElementById("alert_message")
+    closeAlertClick.style.display = "none";
     document.querySelector("html").style = 'overflow:scroll;'
 }
 
 const closeOuterClick = document.getElementById("welcome_message")
+
+
+
 closeOuterClick?.addEventListener("click", () => {
     closeOuterClick.style.display = 'none'
-    document.querySelector("html").style = 'overflow:scroll;'
+    const alertMessage = document.getElementById("alert_message")
+    if (alertMessage == null)
+        document.querySelector("html").style = 'overflow:scroll;'
 })
+
+
   
 
 
